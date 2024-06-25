@@ -1,0 +1,39 @@
+<div class="container-banner" id="roofMedicsBanner">
+  <div class="banner align-center">
+    <button type="button" onclick="document.getElementById('roofMedicsBanner').classList.add('container-banner-closing')" class="btn-close" aria-label="Close"></button>
+    <div class="advertisement align-center">
+      <h2 class="mbr-fonts-style display-2">Limited Time Special Offer!</h2>
+      <p class="mbr-text mbr-fonts-style display-7">
+        Get 20% off the total cost of any size roof repairs or complete replacement roof with choice of roofing material when scheduled before September 1st, 2024!
+      </p>
+      <div class="countdown mbr-fonts-style display-7" id="countdown">
+        Time left: <span id="time"></span>
+      </div>
+      <div class="mbr-section-btn">
+        <a class="btn btn-primary display-4" href="schedule.html">Schedule Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function countdown() {
+    const countDownDate = new Date("Sep 1, 2024 18:00:00").getTime();
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("time").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("time").innerHTML = "EXPIRED";
+    }
+  }
+
+  setInterval(countdown, 1000);
+</script>
