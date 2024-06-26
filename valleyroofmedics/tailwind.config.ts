@@ -3,18 +3,25 @@ import type { Config } from 'tailwindcss';
 const config: Config = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
-    './images/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
-    './styles/**/*.{js,ts,jsx,tsx}',
-    // Add other directories as needed
   ],
   theme: {
     extend: {
       colors: {
-        // Customize your color palette here
+        primary: '#ff0000',
+        secondary: '#00ff00',
+        accent: '#0000ff',
+      },
+      fontFamily: {
+        sans: ['Arial', 'Helvetica', 'sans-serif'],
+        serif: ['Georgia', 'serif'],
+        mono: ['Courier New', 'monospace'],
       },
       spacing: {
-        // Customize your spacing scale here
+        '8': '2rem',
+        '16': '4rem',
+        '32': '8rem',
       },
     },
   },
