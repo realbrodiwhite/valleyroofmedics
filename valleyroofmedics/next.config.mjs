@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    reactStrictMode: true,
+    swcMinify: true,
+    images: {
+      domains: ['r.mobirisesite.com'],
+    },
+    // Add any additional configuration you need here
+  };
+  
+  export default nextConfig;
+  
