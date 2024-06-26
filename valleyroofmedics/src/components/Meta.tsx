@@ -1,13 +1,15 @@
-import Head from 'next/head';
+// src/components/Meta.tsx
+import { Metadata } from 'next';
 
-const Meta = () => (
-  <Head>
-    <meta charSet="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Roof Medics is a top tier roofing company located in Monte Vista, Colorado. Providers of the best roof work in the entire San Luis Valley!" />
-    <title>Roof Medics</title>
-    <link rel="icon" href="/favicon.ico" />
-  </Head>
-);
+export const metadata: Metadata = {
+  title: 'Valley Roof Medics, Monte Vistas Professional Roofing Service Providers - Fix, Repair, Full Replacements',
+  description: 'Valley Roof Medics is a top tier roofing company located in Monte Vista, Colorado. Providers of the best roof work in the entire San Luis Valley!',
+  icons: {
+    icon: '../../public/favicon.ico', // Update with your actual path
+  },
+  viewport: 'width=device-width, initial-scale=1, minimum-scale=1',
+};
+
+const Meta = () => null; // This component can now be empty, as metadata is handled by the Next.js app
 
 export default Meta;

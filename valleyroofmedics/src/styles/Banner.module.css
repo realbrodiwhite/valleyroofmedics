@@ -1,20 +1,86 @@
+.container-banner {
+  height: 8rem;
+  opacity: 1;
+  animation: 4s linear animationHeight;
+  transition: all 0.5s;
+}
+
+.container-banner-closing {
+  pointer-events: none;
+  height: 0;
+  opacity: 0;
+  animation: 0.5s linear animationClosing;
+}
+
 .banner {
-  padding: 10px;
+  min-height: 8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: #fff;
+  padding: 10px;
+  opacity: 1;
+  animation: 4s linear animationBanner;
+  z-index: 1031;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.banner h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
 }
 
 .banner p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  animation: none;
+  visibility: visible;
+}
+
+.banner .btn {
+  margin: 0.3rem 0.5rem;
+  animation: none;
+  visibility: visible;
+}
+
+@keyframes animationBanner {
+  0% { opacity: 0; top: -8rem; }
+  75% { opacity: 0; top: -8rem; }
+  100% { opacity: 1; top: 0; }
+}
+
+@keyframes animationHeight {
+  0% { height: 0; }
+  75% { height: 0; }
+  100% { height: 8rem; }
+}
+
+@keyframes animationClosing {
+  0% { height: 8rem; opacity: 1; }
+  30% { height: 8rem; opacity: 0.5; }
+  100% { height: 0; opacity: 0; }
+}
+
+@media(max-width: 767px) {
+  .container-banner {
+    height: 12rem;
+  }
+  .banner {
+    min-height: 12rem;
+  }
+  @keyframes animationBanner {
+    0% { opacity: 0; top: -12rem; }
+    75% { opacity: 0; top: -12rem; }
+    100% { opacity: 1; top: 0; }
+  }
+  @keyframes animationHeight {
+    0% { height: 0; }
+    75% { height: 0; }
+    100% { height: 12rem; }
+  }
+  @keyframes animationClosing {
+    0% { height: 12rem; opacity: 1; }
+    30% { height: 12rem; opacity: 0.5; }
+    100% { height: 0; opacity: 0; }
+  }
 }

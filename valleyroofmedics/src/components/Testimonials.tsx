@@ -1,24 +1,50 @@
+"use client";
+
 import styles from '../styles/Testimonials.module.css';
 
 const Testimonials = () => (
-  <section className={styles.testimonials}>
-    <div className="container mx-auto p-4 text-center">
-      <h3 className="text-3xl font-bold mb-4">Testimonials</h3>
+  <section className={styles.testimonials} id="testimonials2-2-u8FvvZzBVs">
+    <div className="container">
+      <div className="row justify-content-center">
+        <div className="col-12 content-head">
+          <div className="mbr-section-head mb-5">
+            <h4 className="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Client Testimonials</strong></h4>
+          </div>
+        </div>
+      </div>
       <div className="row">
-        <div className="col-md-4 mb-4">
-          <p>"Roof Medics exceeded my expectations! Professional, efficient, and friendly service. Highly recommend!"</p>
-          <img src="/images/testimonial1.jpg" alt="Testimonial" className="w-full mb-2" />
-          <h4 className="text-xl font-semibold">John Smith</h4>
+        <div className="item col-12 col-md-6 col-lg-4">
+          <div className={styles.itemWrapper}>
+            <div className={styles.itemContent}>
+              <p className="mbr-text mbr-fonts-style display-7">&quot;Roof Medics did an excellent job on my roof replacement. The team was professional, efficient, and ensured that everything was completed to the highest standard. Highly recommend!&quot;</p>
+            </div>
+            <div className={styles.itemFooter}>
+              <h5 className="item-title mbr-fonts-style display-7"><strong>John Doe</strong></h5>
+              <h6 className="item-subtitle mbr-fonts-style display-7">Customer</h6>
+            </div>
+          </div>
         </div>
-        <div className="col-md-4 mb-4">
-          <p>"Incredible work by Roof Medics! They truly care about their customers and deliver exceptional results."</p>
-          <img src="/images/testimonial2.jpg" alt="Testimonial" className="w-full mb-2" />
-          <h4 className="text-xl font-semibold">Emily Johnson</h4>
+        <div className="item col-12 col-md-6 col-lg-4">
+          <div className={styles.itemWrapper}>
+            <div className={styles.itemContent}>
+              <p className="mbr-text mbr-fonts-style display-7">&quot;I was impressed with the level of service provided by Roof Medics. They were prompt, courteous, and the quality of work was outstanding. Will definitely use them again for future projects.&quot;</p>
+            </div>
+            <div className={styles.itemFooter}>
+              <h5 className="item-title mbr-fonts-style display-7"><strong>Jane Smith</strong></h5>
+              <h6 className="item-subtitle mbr-fonts-style display-7">Customer</h6>
+            </div>
+          </div>
         </div>
-        <div className="col-md-4 mb-4">
-          <p>"Roof Medics saved the day! Quick response, quality workmanship, and a pleasure to work with."</p>
-          <img src="/images/testimonial3.jpg" alt="Testimonial" className="w-full mb-2" />
-          <h4 className="text-xl font-semibold">Michael Davis</h4>
+        <div className="item col-12 col-md-6 col-lg-4">
+          <div className={styles.itemWrapper}>
+            <div className={styles.itemContent}>
+              <p className="mbr-text mbr-fonts-style display-7">&quot;Great experience with Roof Medics! The team was knowledgeable and provided valuable advice on maintaining my roof. The repair work was done quickly and effectively.&quot;</p>
+            </div>
+            <div className={styles.itemFooter}>
+              <h5 className="item-title mbr-fonts-style display-7"><strong>Sam Wilson</strong></h5>
+              <h6 className="item-subtitle mbr-fonts-style display-7">Customer</h6>
+            </div>
+          </div>
         </div>
       </div>
     </div>

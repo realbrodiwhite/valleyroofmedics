@@ -1,16 +1,31 @@
 .news {
   padding: 60px 0;
   background: #f8f9fa;
-  text-align: center;
 }
 
-.news h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+.sectionHead {
+  margin-bottom: 2rem;
 }
 
-.news p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+.itemWrapper {
+  text-align: left;
+}
+
+.itemImg img {
+  width: 100%;
+  height: auto;
+}
+
+.itemContent {
+  padding: 1rem;
+}
+
+.itemFooter {
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
 }
