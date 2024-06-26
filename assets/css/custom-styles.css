@@ -1,0 +1,93 @@
+.navbar-logo-img {
+    height: 5rem;
+  }
+  
+  .icon-white {
+    color: rgb(255, 255, 255);
+    fill: rgb(255, 255, 255);
+  }
+  
+  .overlay {
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .navbar-caption-wrap .text-danger {
+    color: #dc3545;
+  }
+  
+  .navbar-caption-wrap .display-4 {
+    font-size: 1.5rem;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: #333;
+  }
+  
+  .display-7 {
+    font-size: 1rem;
+  }
+  
+  .mbr-section-title {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  .mbr-text {
+    color: #fff;
+  }
+  
+  .display-2 {
+    font-size: 2rem;
+  }
+  
+  .text-black {
+    color: #000;
+  }
+  
+  .mbr-side-description {
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .google-map {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .item-btn {
+    font-size: 1rem;
+  }
+  
+  .card .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .card .mt-3 {
+    margin-top: 1.5rem;
+  }
+  
+  .row .mb-5 {
+    margin-bottom: 3rem;
+  }
+  
+  .col-12 .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
